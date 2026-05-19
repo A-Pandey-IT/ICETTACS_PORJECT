@@ -1,0 +1,114 @@
+/* ===== BASE FOOTER STYLES ===== */
+.site-footer {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 3rem;
+  margin-top: 4rem;
+}
+
+.container.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+/* Footer Columns */
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ff6b6b;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.footer-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffd93d;
+  margin-bottom: 1.25rem;
+  border-left: 3px solid #ff6b6b;
+  padding-left: 0.75rem;
+}
+
+/* Text styles */
+.footer-col p {
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+/* Navigation Links */
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.footer-nav a:hover {
+  color: #ff6b6b;
+  padding-left: 5px;
+}
+
+/* Contact & Venue links */
+.footer-col a {
+  color: #ffd93d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-col a:hover {
+  color: #ff6b6b;
+  text-decoration: underline;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  background-color: #11111f;
+  margin-top: 3rem;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  border-top: 1px solid #2a2a3e;
+}
+
+.footer-bottom p {
+  margin-bottom: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.footer-links-bottom {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-links-bottom span {
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-links-bottom span:hover {
+  color: #ff6b6b;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Speakers at ICCETACS 2026 - Coming Soon">
+    <title>Speakers | ICCETACS 2026</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/base/reset.css">
+    <link rel="stylesheet" href="../css/base/variables.css">
+    <link rel="stylesheet" href="../css/base/base.css">
+    <link rel="stylesheet" href="../css/layout/grid.css">
+    <link rel="stylesheet" href="../css/sections/speakers.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<main class="speakers-page">
+    
+    <!-- Coming Soon Overlay -->
+    <div class="coming-soon-overlay" id="comingSoonOverlay">
+        <div class="overlay-backdrop"></div>
+        
+        <div class="coming-soon-modal">
+            <button class="modal-close" id="closeModalBtn">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="modal-icon">
+                <i class="fas fa-microphone-alt"></i>
+            </div>
+            
+            <h2>Speakers Lineup</h2>
+            <h3>Coming Soon!</h3>
+            
+            <div class="modal-divider">
+                <span></span>
+                <i class="fas fa-star"></i>
+                <span></span>
+            </div>
+            
+            <p>
+                We are excited to announce an exceptional lineup of distinguished speakers 
+                from around the world. The list of keynote speakers, invited talks, 
+                and session chairs will be announced shortly.
+            </p>
+            
+            <div class="speaker-preview">
+                <h4>Expected Topics Include:</h4>
+                <ul>
+                    <li><i class="fas fa-robot"></i> Advances in Artificial Intelligence</li>
+                    <li><i class="fas fa-shield-alt"></i> Cybersecurity Innovations</li>
+                    <li><i class="fas fa-cloud"></i> Cloud Computing Trends</li>
+                    <li><i class="fas fa-chart-line"></i> Data Science Applications</li>
+                    <li><i class="fas fa-microchip"></i> IoT and Smart Systems</li>
+                </ul>
+            </div>
+            
+            <div class="notification-box">
+                <i class="fas fa-bell"></i>
+                <p>Get notified when speakers are announced</p>
+                <form id="notifyForm" class="notify-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Notify Me</button>
+                </form>
+            </div>
+            
+            <div class="modal-footer">
+                <p>Follow us for updates:</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <button class="btn-close" id="closeBtn">Close</button>
+        </div>
+    </div>
+
+</main>
+
+<script src="../js/speakers.js"></script>
+</body>
+</html>

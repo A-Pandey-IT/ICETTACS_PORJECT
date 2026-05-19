@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Submit your paper for ICCETACS 2026. Online paper submission system for the International Conference on Emerging Trends and Technologies in Applications of Computer Science.">
+    <title>Submit Paper | ICCETACS 2026</title>
+    
+    <!-- CSS Files -->
+    
+    <link rel="stylesheet" href="../css/sections/submit-papers.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<main class="submit-page">
+
+    <!-- =========================
+         PAGE HERO
+    ========================= -->
+
+    <section class="page-hero">
+        <div class="container page-hero-content">
+            <h1 class="page-title">Submit Your Paper</h1>
+            <p class="page-subtitle">
+                International Conference on Emerging Trends and Technologies in Applications of Computer Science
+            </p>
+            <p class="hero-date">9th – 10th July 2026 | BIT Mesra, Lalpur Unit, Ranchi</p>
+        </div>
+    </section>
+
+    <!-- =========================
+         SUBMISSION INFO
+    ========================= -->
+
+    <section class="submission-info">
+        <div class="container">
+            <div class="info-banner">
+                <i class="fas fa-info-circle"></i>
+                <div class="info-content">
+                    <h3>Important Information</h3>
+                    <p>All papers must be submitted through the online submission system. Please read the guidelines carefully before submitting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         SUBMISSION FORM
+    ========================= -->
+
+    <section class="submission-form-section">
+        <div class="container">
+            <h2 class="section-title">Paper Submission Form</h2>
+            <hr class="section-hr">
+            <p class="section-subtitle">Fill in the details to submit your paper</p>
+
+            <div class="form-container">
+                <form id="submissionForm" class="submission-form" enctype="multipart/form-data">
+                    
+                    <!-- Author Information -->
+                    <div class="form-group full-width">
+                        <h3 class="form-section-title">
+                            <i class="fas fa-user"></i> Author Information
+                        </h3>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name <span class="required">*</span></label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lastName">Last Name <span class="required">*</span></label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                            <small>This will be used for all correspondence</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="affiliation">Affiliation/Institute <span class="required">*</span></label>
+                        <input type="text" id="affiliation" name="affiliation" required>
+                        <small>University/Institute/Organization name</small>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="country">Country <span class="required">*</span></label>
+                            <select id="country" name="country" required>
+                                <option value="">Select Country</option>
+                                <option value="India">India</option>
+                                <option value="United States">United States</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Germany">Germany</option>
+                                <option value="France">France</option>
+                                <option value="Japan">Japan</option>
+                                <option value="China">China</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="orcid">ORCID ID</label>
+                            <input type="text" id="orcid" name="orcid" placeholder="0000-0000-0000-0000">
+                            <small>Optional but recommended</small>
+                        </div>
+                    </div>
+
+                    <!-- Paper Information -->
+                    <div class="form-group full-width">
+                        <h3 class="form-section-title">
+                            <i class="fas fa-file-alt"></i> Paper Information
+                        </h3>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="paperTitle">Paper Title <span class="required">*</span></label>
+                        <input type="text" id="paperTitle" name="paperTitle" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="track">Conference Track <span class="required">*</span></label>
+                            <select id="track" name="track" required>
+                                <option value="">Select Track</option>
+                                <option value="track1">Track 1: Cyber Physical Systems, Hardware & Network Innovations</option>
+                                <option value="track2">Track 2: Intelligent Systems and Business Applications</option>
+                                <option value="track3">Track 3: Mathematical Computing, Algorithmic Design and Quantum Computing</option>
+                                <option value="track4">Track 4: Security and Cryptography including Blockchain Technology</option>
+                                <option value="track5">Track 5: Sustainable Development goals including Earth Exploration</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="keywords">Keywords <span class="required">*</span></label>
+                            <input type="text" id="keywords" name="keywords" placeholder="e.g., Machine Learning, AI, Blockchain">
+                            <small>Comma-separated keywords (max 6)</small>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="abstract">Abstract <span class="required">*</span></label>
+                        <textarea id="abstract" name="abstract" rows="5" required></textarea>
+                        <small>Maximum 250 words. Briefly describe your research objectives, methods, and key findings.</small>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="authors">List of Authors <span class="required">*</span></label>
+                            <input type="text" id="authors" name="authors" placeholder="John Doe, Jane Smith, ...">
+                            <small>Enter all author names as they should appear in the proceedings</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="correspondingAuthor">Corresponding Author <span class="required">*</span></label>
+                            <input type="text" id="correspondingAuthor" name="correspondingAuthor">
+                            <small>Name of the corresponding author</small>
+                        </div>
+                    </div>
+
+                    <!-- File Upload -->
+                    <div class="form-group full-width">
+                        <h3 class="form-section-title">
+                            <i class="fas fa-upload"></i> File Upload
+                        </h3>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="manuscript">Manuscript File <span class="required">*</span></label>
+                        <div class="file-upload-area" id="fileUploadArea">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Drag & drop your file here or click to browse</p>
+                            <small>PDF format only. Max size: 10MB</small>
+                            <input type="file" id="manuscript" name="manuscript" accept=".pdf" style="display: none;">
+                            <button type="button" class="btn-browse" id="browseBtn">Browse Files</button>
+                        </div>
+                        <div id="fileInfo" class="file-info"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="consent" required>
+                            <label for="consent">
+                                I confirm that this paper is original, unpublished, and not under consideration elsewhere.
+                                <span class="required">*</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="terms" required>
+                            <label for="terms">
+                                I agree to the <a href="#" id="termsLink">Terms and Conditions</a> of submission.
+                                <span class="required">*</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary" id="submitBtn">
+                            <i class="fas fa-paper-plane"></i> Submit Paper
+                        </button>
+                        <button type="reset" class="btn btn-secondary">
+                            <i class="fas fa-undo"></i> Reset Form
+                        </button>
+                    </div>
+
+                </form>
+
+                <div class="form-note">
+                    <i class="fas fa-lock"></i>
+                    <p>All submissions are encrypted and secure. You will receive a confirmation email after submission.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         SUBMISSION GUIDELINES
+    ========================= -->
+
+    <section class="guidelines-section">
+        <div class="container">
+            <h2 class="section-title">Submission Guidelines</h2>
+            <hr class="section-hr">
+
+            <div class="guidelines-grid">
+                <div class="guideline-item">
+                    <i class="fas fa-file-pdf"></i>
+                    <h3>Format Requirements</h3>
+                    <p>IEEE double-column format (A4 size), maximum 6 pages including references</p>
+                </div>
+
+                <div class="guideline-item">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Originality</h3>
+                    <p>Papers must be original, unpublished, and not under review elsewhere</p>
+                </div>
+
+                <div class="guideline-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Quality Standards</h3>
+                    <p>High technical quality, clear presentation, and significant contribution</p>
+                </div>
+
+                <div class="guideline-item">
+                    <i class="fas fa-user-check"></i>
+                    <h3>Author Guidelines</h3>
+                    <p>Maximum 6 authors per paper. Include complete contact information</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         CMT PORTAL INFO
+    ========================= -->
+
+    <section class="cmt-section">
+        <div class="container">
+            <div class="cmt-box">
+                <i class="fas fa-external-link-alt"></i>
+                <h3>Submit via CMT Portal</h3>
+                <p>You can also submit your paper through the Microsoft CMT (Conference Management Toolkit) platform.</p>
+                <a href="https://cmt3.research.microsoft.com/" target="_blank" class="btn btn-outline">
+                    Go to CMT Portal <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Success Modal -->
+<div id="successModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <h2>Submission Successful!</h2>
+        <p>Your paper has been submitted successfully. A confirmation email has been sent to your registered email address.</p>
+        <p><strong>Paper ID:</strong> <span id="paperIdDisplay"></span></p>
+        <button class="btn btn-primary" id="modalCloseBtn">OK</button>
+    </div>
+</div>
+
+<script src="../js/submit-paper.js"></script>
+</body>
+</html>

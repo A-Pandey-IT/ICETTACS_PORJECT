@@ -1,0 +1,340 @@
+/* =========================
+   SPEAKERS PAGE - COMING SOON
+========================= */
+
+.speakers-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+}
+
+/* Coming Soon Overlay */
+.coming-soon-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.overlay-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+}
+
+/* Modal Content */
+.coming-soon-modal {
+    position: relative;
+    z-index: 2;
+    max-width: 550px;
+    width: 100%;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 20px;
+    padding: 2.5rem;
+    text-align: center;
+    animation: modalSlideIn 0.5s ease;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes modalSlideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Close Button */
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-close i {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.modal-close:hover {
+    background: rgba(0, 0, 0, 0.2);
+    transform: rotate(90deg);
+}
+
+/* Modal Icon */
+.modal-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.modal-icon i {
+    font-size: 2.5rem;
+    color: white;
+}
+
+/* Headings */
+.coming-soon-modal h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.coming-soon-modal h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #667eea;
+    margin-bottom: 1rem;
+}
+
+/* Divider */
+.modal-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 1.5rem 0;
+}
+
+.modal-divider span {
+    width: 50px;
+    height: 2px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+.modal-divider i {
+    color: #764ba2;
+    font-size: 0.8rem;
+}
+
+/* Description */
+.coming-soon-modal p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Speaker Preview */
+.speaker-preview {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    text-align: left;
+}
+
+.speaker-preview h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.speaker-preview ul {
+    list-style: none;
+    padding: 0;
+}
+
+.speaker-preview li {
+    padding: 0.5rem 0;
+    color: #666;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.speaker-preview li i {
+    color: #667eea;
+    width: 20px;
+    font-size: 0.9rem;
+}
+
+/* Notification Box */
+.notification-box {
+    background: linear-gradient(135deg, #f0f4ff 0%, #e8eeff 100%);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.notification-box i {
+    font-size: 2rem;
+    color: #667eea;
+    margin-bottom: 0.5rem;
+}
+
+.notification-box p {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.notify-form {
+    display: flex;
+    gap: 10px;
+}
+
+.notify-form input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.notify-form input:focus {
+    border-color: #667eea;
+}
+
+.notify-form button {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+}
+
+.notify-form button:hover {
+    transform: translateY(-2px);
+}
+
+/* Modal Footer */
+.modal-footer {
+    margin-top: 1.5rem;
+}
+
+.modal-footer p {
+    font-size: 0.85rem;
+    color: #999;
+    margin-bottom: 0.75rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 1.5rem;
+}
+
+.social-links a {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #667eea;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Close Button */
+.btn-close {
+    background: transparent;
+    border: 2px solid #667eea;
+    color: #667eea;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.btn-close:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Success Message */
+.success-message {
+    background: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+
+.success-message i {
+    color: #28a745;
+    font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .coming-soon-modal {
+        padding: 1.5rem;
+    }
+    
+    .modal-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .modal-icon i {
+        font-size: 1.8rem;
+    }
+    
+    .coming-soon-modal h2 {
+        font-size: 1.4rem;
+    }
+    
+    .coming-soon-modal h3 {
+        font-size: 1.2rem;
+    }
+    
+    .notify-form {
+        flex-direction: column;
+    }
+    
+    .speaker-preview li {
+        font-size: 0.8rem;
+    }
+}
