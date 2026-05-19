@@ -1,0 +1,596 @@
+/* =========================
+   PEER REVIEW PAGE STYLES
+   Based on ICCETACS 2026 Design
+========================= */
+
+/* =========================
+   PAGE HERO
+========================= */
+.peer-review-page {
+    background: var(--icettacs-white, #ffffff);
+}
+
+.page-hero {
+    background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 5rem 0 4rem;
+}
+
+.page-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.page-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.page-subtitle {
+    font-size: 1.25rem;
+    opacity: 0.95;
+    max-width: 800px;
+    margin: 0 auto 0.5rem;
+}
+
+.hero-date {
+    font-size: 0.9rem;
+    opacity: 0.85;
+    margin-top: 0.5rem;
+}
+
+/* =========================
+   SECTION TITLES
+========================= */
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: #212529;
+    margin-bottom: 0.5rem;
+}
+
+.section-hr {
+    width: 80px;
+    height: 3px;
+    background: #0d6efd;
+    border: none;
+    margin: 1rem auto 2rem;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #6c757d;
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+}
+
+/* =========================
+   INTRODUCTION
+========================= */
+.pr-intro {
+    padding: 4rem 0;
+    background: #ffffff;
+}
+
+.intro-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.intro-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #212529;
+    margin-bottom: 1.5rem;
+}
+
+.intro-content strong {
+    color: #0d6efd;
+}
+
+/* =========================
+   REVIEW STEPS TIMELINE
+========================= */
+.pr-steps {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+.steps-timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 2rem;
+}
+
+.steps-timeline::before {
+    content: '';
+    position: absolute;
+    left: 35px;
+    top: 20px;
+    bottom: 20px;
+    width: 2px;
+    background: #0d6efd;
+    opacity: 0.3;
+}
+
+.step-item {
+    position: relative;
+    display: flex;
+    margin-bottom: 2.5rem;
+    gap: 1.5rem;
+}
+
+.step-number {
+    width: 70px;
+    height: 70px;
+    background: #0d6efd;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.step-dot {
+    position: absolute;
+    left: -1rem;
+    top: 2.5rem;
+    width: 12px;
+    height: 12px;
+    background: #0d6efd;
+    border-radius: 50%;
+    display: none;
+}
+
+.step-content {
+    flex: 1;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-content:hover {
+    transform: translateX(5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.step-content h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #212529;
+    margin-bottom: 0.75rem;
+}
+
+.step-content p {
+    font-size: 0.95rem;
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.step-content ul {
+    margin: 0.5rem 0 1rem 1.5rem;
+}
+
+.step-content li {
+    font-size: 0.9rem;
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 0.25rem;
+}
+
+.step-duration {
+    display: inline-block;
+    background: #e7f1ff;
+    color: #0d6efd;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    margin-top: 0.5rem;
+}
+
+/* =========================
+   ETHICAL STANDARDS
+========================= */
+.pr-ethics {
+    padding: 4rem 0;
+    background: #ffffff;
+}
+
+.ethics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.ethics-card {
+    background: #f8f9fa;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid #dee2e6;
+}
+
+.ethics-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border-color: #e7f1ff;
+}
+
+.ethics-card i {
+    font-size: 2rem;
+    color: #0d6efd;
+    margin-bottom: 1rem;
+}
+
+.ethics-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #212529;
+}
+
+.ethics-card p {
+    font-size: 0.9rem;
+    color: #6c757d;
+    line-height: 1.5;
+}
+
+/* =========================
+   REVIEWER GUIDELINES
+========================= */
+.pr-reviewers {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+.reviewer-guidelines {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.guideline-block {
+    display: flex;
+    gap: 1.5rem;
+    background: #ffffff;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.guideline-block:hover {
+    transform: translateX(10px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.guideline-icon {
+    width: 50px;
+    height: 50px;
+    background: #e7f1ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.guideline-icon i {
+    font-size: 1.25rem;
+    color: #0d6efd;
+}
+
+.guideline-text {
+    flex: 1;
+}
+
+.guideline-text h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #212529;
+    margin-bottom: 0.5rem;
+}
+
+.guideline-text p {
+    font-size: 0.9rem;
+    color: #6c757d;
+    line-height: 1.5;
+}
+
+/* =========================
+   QUALITY ASSURANCE
+========================= */
+.pr-quality {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+}
+
+.quality-box {
+    background: #ffffff;
+    border-radius: 0.5rem;
+    padding: 2.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.quality-box i:first-child {
+    font-size: 3rem;
+    color: #0d6efd;
+    margin-bottom: 1rem;
+}
+
+.quality-box h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #212529;
+}
+
+.quality-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.quality-item {
+    display: flex;
+    gap: 1rem;
+    text-align: left;
+}
+
+.quality-item i {
+    font-size: 1.5rem;
+    color: #0d6efd;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.quality-item h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: #212529;
+}
+
+.quality-item p {
+    font-size: 0.85rem;
+    color: #6c757d;
+    line-height: 1.4;
+}
+
+/* =========================
+   FAQ SECTION
+========================= */
+.pr-faq {
+    padding: 4rem 0;
+    background: #ffffff;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: #f8f9fa;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.faq-question i {
+    font-size: 1.25rem;
+    color: #0d6efd;
+}
+
+.faq-question h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #212529;
+    margin: 0;
+}
+
+.faq-answer p {
+    font-size: 0.9rem;
+    color: #6c757d;
+    line-height: 1.5;
+    margin-left: 2rem;
+}
+
+.faq-answer strong {
+    color: #0d6efd;
+}
+
+/* =========================
+   CONTACT BANNER
+========================= */
+.pr-contact {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+.contact-banner {
+    background: #ffffff;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    border: 1px solid #dee2e6;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-banner-content {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contact-banner-content i {
+    font-size: 2rem;
+    color: #0d6efd;
+}
+
+.contact-banner-content h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: #212529;
+}
+
+.contact-banner-content p {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+.contact-banner-actions .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: #0d6efd;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.contact-banner-actions .btn:hover {
+    background: #0b5ed7;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 992px) {
+    .ethics-grid,
+    .faq-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .page-hero {
+        padding: 3rem 0;
+    }
+    
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .page-subtitle {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .steps-timeline {
+        padding-left: 0;
+    }
+    
+    .steps-timeline::before {
+        display: none;
+    }
+    
+    .step-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .step-number {
+        margin-bottom: 0.5rem;
+    }
+    
+    .step-content ul {
+        text-align: left;
+    }
+    
+    .ethics-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-banner {
+        flex-direction: column;
+        text-align: center;
+        margin: 0 1rem;
+    }
+    
+    .contact-banner-content {
+        flex-direction: column;
+    }
+    
+    .quality-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .quality-item {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-title {
+        font-size: 1.75rem;
+    }
+    
+    .section-title {
+        font-size: 1.35rem;
+    }
+    
+    .step-content h3 {
+        font-size: 1rem;
+    }
+    
+    .ethics-card h3,
+    .guideline-text h3 {
+        font-size: 1rem;
+    }
+    
+    .faq-question h3 {
+        font-size: 0.9rem;
+    }
+}

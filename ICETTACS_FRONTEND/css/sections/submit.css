@@ -1,0 +1,300 @@
+:root {
+	--color-white: #ffffff;
+	--color-text: #222222;
+	--color-muted: #666666;
+	--color-border: #dcdcdc;
+	--color-primary: #0d6efd;
+	--overlay-bg: rgba(0, 0, 0, 0.65);
+
+	--shadow-md: 0 10px 30px rgba(0,0,0,0.15);
+
+	--radius-md: 10px;
+
+	--transition: all 0.25s ease;
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+.peer-review-page {
+	position: relative;
+
+	min-height: 100vh;
+
+	font-family: "Poppins", sans-serif;
+
+	background: #f5f7fb;
+}
+
+
+/* =========================
+   LOGIN OVERLAY
+========================= */
+
+.login-overlay {
+	position: fixed;
+	inset: 0;
+	z-index: 999;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 20px;
+
+	visibility: visible;
+	opacity: 1;
+
+	transition: var(--transition);
+}
+
+
+/* =========================
+   OVERLAY BACKDROP
+========================= */
+
+.overlay-backdrop {
+	position: absolute;
+	inset: 0;
+
+	background: var(--overlay-bg);
+
+	backdrop-filter: blur(4px);
+}
+
+
+/* =========================
+   LOGIN BOX
+========================= */
+
+.login-box {
+	position: relative;
+	z-index: 2;
+
+	width: 100%;
+	max-width: 420px;
+
+	padding: 40px 32px;
+
+	background: var(--color-white);
+
+	border-radius: var(--radius-md);
+
+	box-shadow: var(--shadow-md);
+}
+
+
+/* =========================
+   CLOSE BUTTON
+========================= */
+
+.overlay-close {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 36px;
+	height: 36px;
+
+	font-size: 1.4rem;
+	color: var(--color-text);
+
+	background: transparent;
+
+	border: none;
+	border-radius: 50%;
+
+	cursor: pointer;
+
+	transition: var(--transition);
+}
+
+
+.overlay-close:hover {
+	background: rgba(0,0,0,0.06);
+}
+
+
+/* =========================
+   LOGIN HEADER
+========================= */
+
+.login-header {
+	margin-bottom: 30px;
+
+	text-align: center;
+}
+
+
+.login-header h2 {
+	margin-bottom: 10px;
+
+	font-size: 2rem;
+	font-weight: 700;
+
+	color: var(--color-text);
+}
+
+
+.login-header p {
+	font-size: 0.95rem;
+
+	color: var(--color-muted);
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+#loginForm {
+	display: flex;
+	flex-direction: column;
+
+	gap: 20px;
+}
+
+
+/* =========================
+   FORM GROUP
+========================= */
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+
+	gap: 8px;
+}
+
+
+.form-group label {
+	font-size: 0.95rem;
+	font-weight: 500;
+
+	color: var(--color-text);
+}
+
+
+.form-group input {
+	width: 100%;
+
+	padding: 12px 14px;
+
+	font-size: 0.95rem;
+	font-family: inherit;
+
+	color: var(--color-text);
+
+	background: #fff;
+
+	border: 1px solid var(--color-border);
+	border-radius: 8px;
+
+	outline: none;
+
+	transition: var(--transition);
+}
+
+
+.form-group input:focus {
+	border-color: var(--color-primary);
+
+	box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.12);
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+
+	padding: 13px 18px;
+
+	font-size: 1rem;
+	font-weight: 600;
+	font-family: inherit;
+
+	border: none;
+	border-radius: 8px;
+
+	cursor: pointer;
+
+	transition: var(--transition);
+}
+
+
+.btn-primary {
+	color: var(--color-white);
+
+	background: var(--color-primary);
+}
+
+
+.btn-primary:hover {
+	transform: translateY(-2px);
+
+	box-shadow: 0 8px 18px rgba(13, 110, 253, 0.25);
+}
+
+
+/* =========================
+   LOGIN LINKS
+========================= */
+
+.login-links {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	margin-top: 5px;
+}
+
+
+.login-links a {
+	font-size: 0.88rem;
+	text-decoration: none;
+
+	color: var(--color-primary);
+
+	transition: color 0.2s ease;
+}
+
+
+.login-links a:hover {
+	color: #084298;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 576px) {
+
+	.login-box {
+		padding: 35px 22px;
+	}
+
+	.login-header h2 {
+		font-size: 1.7rem;
+	}
+
+	.login-links {
+		flex-direction: column;
+		align-items: flex-start;
+
+		gap: 10px;
+	}
+}
